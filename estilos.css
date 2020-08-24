@@ -1,0 +1,130 @@
+@font-face {
+    font-family: AvenirNextCondensed-Bold;
+    src: url(Mada-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: AvenirNextCondensed-Regular;
+    src: url(Mada-Regular.ttf);
+    font-weight: normal;
+}
+
+body {
+    /*background-image: linear-gradient(to right, rgba(72, 149, 143, 0.45) , #225e71);*/
+    background-color: #ededed;
+
+}
+
+.tcen {
+    text-align: center;
+}
+
+.tTodos {
+    /*width: 358px;
+    height: 30px;*/
+    font-family: AvenirNextCondensed-Regular;
+    /*font-size: 22px;*/
+    font-size: 14px;
+    font-weight: normal;
+    /*font-stretch: condensed;*/
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.14px;
+    color: #a3a1a1;
+}
+
+.marcaAgua {
+    width: 162px;
+    height: 53px;
+    object-fit: contain;
+    /*background-color: #a3a1a1;*/
+}
+
+.cardFront{
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 300px;
+    z-index: 10;
+    background-color: transparent;
+    border: 0px;
+}
+
+.logoCardFront{
+    width: 72px;
+}
+
+.tCardFront {
+    font-family: AvenirNextCondensed-Bold;
+    font-size: 72px;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.46px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.conImg {
+    width: 100%;
+}
+
+.mainImg {
+    width: 100%;
+}
+
+.btnPreReg {
+    width: 193px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #48958f;
+    font-family: AvenirNextCondensed-Bold;
+    color: #ffffff;
+    line-height: 35px;
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) { 
+    .cardFront{
+        background-image: linear-gradient(to right, rgba(72, 149, 143, 0.45) , #225e71);
+        position: relative;
+        top: 0px !important;
+    }
+    
+    .tCardFront {
+        font-size: 22px !important;
+        letter-spacing: 0.46px;
+    } 
+
+    .logoCardFront{
+        width: 32px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) { 
+    .cardFront{
+        top: 100px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) { 
+    .cardFront{
+        top: 200px;
+    }
+    .tCardFront {
+        font-size: 36px;
+        letter-spacing: 0.46px;
+    } 
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {  
+    .cardFront{
+        top: 150px;
+    }
+}
