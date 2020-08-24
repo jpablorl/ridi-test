@@ -147,6 +147,7 @@ body {
     background-color: #b60450;
     color: #ffffff;  
     font-family: AvenirNextCondensed-Bold;
+    line-height: 25px;
 }
 
 .modal-title {
@@ -219,5 +220,16 @@ body {
 @media (min-width: 576px) {
     .modal-dialog-centered {
         min-height: calc(60%);
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-dialog-centered {
+        min-height: calc(60%);
+    }
+
+    .input-group {
+        width: 100%;
+        display: inline-flex;
     }
 }
