@@ -60,3 +60,19 @@
 .carousel-indicators li .active {
     background-color: red;
 }
+
+.func {
+    height: 100px;
+    width: 100px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.conFunc {
+    height: 200px;
+}
+
+.conFunc .row .col-4{
+    text-align: center;
+}
