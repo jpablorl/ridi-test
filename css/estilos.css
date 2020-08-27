@@ -32,13 +32,16 @@
     color: white;
 }
 
-.carousel-item {
-    /*background-color: teal;*/
-}
-
 .cardTour{
     height: 400px;
+    background-color: transparent;
+    color: white;
+    border: 0;
 }
+
+.cardTour .card-header,.card-body {
+    border: 0;
+} 
 
 .carousel-item-uno{
     background-color: teal;
