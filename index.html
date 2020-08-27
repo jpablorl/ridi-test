@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Streaming</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">Streaming</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Prensa</a>
@@ -54,7 +54,7 @@
         </div>
     </nav>
     <!-- ¿Quienes somos? -->
-    <div class="container bgQueSom">
+    <div class="bgQueSom">
         <div class="card carQueSom">
             <div class="card-body">
                 <h3 class="card-title">¿Quiénes somos?</h3>
@@ -98,58 +98,176 @@
     <!-- Tour por la aplicación -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active carousel-item-uno">
-            <!-- img class="d-block w-100" src="..." alt="First slide"-->
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="card cardTour">
-                            <div class="card-body">
-                              <h5 class="card-title">El Problema</h5>
-                              <p class="card-text">
-                                La iglesia cristiana fue tomada por sorpresa mundialmente por la pandemia COVID19 dejándola incapaz de reunirse físicamente, predicar y liderar de la manera eficaz que lo venían haciendo.
-                                Nuestro propósito es ayudar a estas iglesias no solo a sobrevivir, sino a prosperar y seguir adelante.</p>
-                              <a href="#" class="btn btn-primary">Ver Más</a>
+            <div class="carousel-item active carousel-item-uno">
+                <!-- img class="d-block w-100" src="..." alt="First slide"-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card cardTour">
+                                <div class="card-body">
+                                    <h5 class="card-title">El Problema</h5>
+                                    <p class="card-text">
+                                        La iglesia cristiana fue tomada por sorpresa mundialmente por la pandemia
+                                        COVID19 dejándola incapaz de reunirse físicamente, predicar y liderar de la
+                                        manera eficaz que lo venían haciendo.
+                                        Nuestro propósito es ayudar a estas iglesias no solo a sobrevivir, sino a
+                                        prosperar y seguir adelante.</p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
                             </div>
-                          </div>
-                    </div>
-                    <div class="col-6">
-                        <img src="img/images.jpeg" class="rounded mx-auto d-block" alt="..." style="width: 100%;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/images.jpeg" class="rounded mx-auto d-block" alt="..." style="width: 100%;">
+                        </div>
                     </div>
                 </div>
             </div>
-          </div>
-          <div class="carousel-item carousel-item-dos">
-            <!--img class="d-block w-100" src="..." alt="Second slide"-->
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <img src="img/images.jpeg" class="rounded mx-auto d-block" alt="..." style="width: 100%;">
-                    </div>
-                    <div class="col-6">
-                        <div class="card cardTour">
-                            <div class="card-body">
-                              <h5 class="card-title">La Solución</h5>
-                              <p class="card-text">
-                                Proporcionaremos a todos los pastores, obispos y ministros una plataforma para:
-                                Predicar sus sermones semanales a su congregación estándar; y expandirse a nuevos creyentes a nivel mundial a través de STREAMING GRATUITO.
-                                Esta es la forma rápida y segura puedan hacer el recaudo de los diezmos y ofrendas.
-                                Finalmente, proporcionaremos a más de 660 millones de iglesias evangélicas servicios de valor agregado, como música, películas y educación, lo cual les permitirá tener la oportunidad de una mayor extensión y alcance.</p>
-                              <a href="#" class="btn btn-primary">Ver Más</a>
+            <div class="carousel-item carousel-item-dos">
+                <!--img class="d-block w-100" src="..." alt="Second slide"-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/images.jpeg" class="rounded mx-auto d-block" alt="..." style="width: 100%;">
+                        </div>
+                        <div class="col-6">
+                            <div class="card cardTour">
+                                <div class="card-body">
+                                    <h5 class="card-title">La Solución</h5>
+                                    <p class="card-text">
+                                        Proporcionaremos a todos los pastores, obispos y ministros una plataforma para:
+                                        Predicar sus sermones semanales a su congregación estándar; y expandirse a
+                                        nuevos creyentes a nivel mundial a través de STREAMING GRATUITO.
+                                        Esta es la forma rápida y segura puedan hacer el recaudo de los diezmos y
+                                        ofrendas.
+                                        Finalmente, proporcionaremos a más de 660 millones de iglesias evangélicas
+                                        servicios de valor agregado, como música, películas y educación, lo cual les
+                                        permitirá tener la oportunidad de una mayor extensión y alcance.</p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
-          </div>
         </div>
-      </div>
-    <!--  -->
-
+    </div>
+    <!-- Nuestros aliados -->
+    <div class="container conAli">
+        <div class="row">
+            <h5>Nuestros Aliados</h5>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <div class="ali">
+                    Iglesia 1
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="ali">
+                    Iglesia 2
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="ali">
+                    Iglesia 3
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="ali">
+                    Iglesia 4
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="ali">
+                    Iglesia 5
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="ali">
+                    Iglesia 6
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>RIDI</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Inicio</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Streaming</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Ofrendar</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Registro</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Términos y condiciones</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Acuerdo de confidencialidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <!--h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+					</ul-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p><u><a href="https://www.ridi1.com/">RIDI </a></u>Es la Red Internacional De Iglesias</p>
+                    <p class="h6">© Todos los derechos reservados.<a class="text-green ml-2"
+                            href="https://www.ridi1.com" target="_blank">RIDI</a></p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <!-- Modal for streaming -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Streaming</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="300px"  src="https://www.youtube.com/embed/OX_qiYc8_bk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!--div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div-->
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="lib/jquery/jquery-3.5.1.slim.min.js"></script>

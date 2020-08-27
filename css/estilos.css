@@ -1,3 +1,5 @@
+/* Global */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @font-face {
     font-family: AvenirNextCondensed-Bold;
     src: url(Mada-Bold.ttf);
@@ -9,8 +11,7 @@
     src: url(Mada-Regular.ttf);
     font-weight: normal;
 }
-
-
+/* Landing */
 .bgQueSom { 
     /* The image used */
     background-image: url("../img/bitmap.png");
@@ -24,18 +25,20 @@
     background-size: cover;
 
     padding: 3em;
+    width: 100% !important;
+    margin: 0 !important;
   }
 
 .carQueSom {
-
     background-color: transparent !important;
     color: white;
+    border: 0;
+    width: 50%;
 }
 
 .cardTour{
     height: 400px;
     background-color: transparent;
-    /*color: white;*/
     border: 0;
 }
 
@@ -67,12 +70,104 @@
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
+    line-height: 100px;
+}
+
+.ali {
+    height: 100px;
+    width: 100px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 100px;
 }
 
 .conFunc {
     height: 200px;
 }
 
-.conFunc .row .col-4{
+.conAli {
+    height: 200px;
+}
+
+.conFunc .row .col-4 {
     text-align: center;
+}
+
+.conAli .row .col-2 {
+    text-align: center;
+}
+/* Footer */
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    /*background: #007b5e !important;]*/
+    background-image: linear-gradient(to right,  #225e71, rgba(72, 149, 143, 0.45)) !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
 }
