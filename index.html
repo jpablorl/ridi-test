@@ -7,221 +7,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="estilos.css">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="/css/estilos.css">
 
+    <!--  -->
     <title>RIDI1</title>
 </head>
 
 <body>
-    <div class="conImg">
-        <img src="bitmap.png" class="mainImg" alt="Responsive image">
-    </div>
-    <div class="card cardFront">
-        <div class="container tcen">
-
+    <!-- Navbar -->
+    <!-- Image and text -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/ridi solo-01-01.png" width="30" height="30" class="d-inline-block align-top" alt=""
+                loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Streaming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Prensa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ayuda</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto p-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ofrendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Iniciar sesisón</a>
+                </li>
+            </ul>
         </div>
-        <div class="card-body">
+    </nav>
+    <!-- ¿Quienes somos? -->
+    <div class="container bgQueSom">
+        <div class="card carQueSom">
+            <div class="card-body">
+                <h3 class="card-title">¿Quiénes somos?</h3>
+                <p class="card-text">
+                    Somos la Red Internacional de Iglesias.
+                    Somos una multi plataforma tecnológica Live Streaming diseñada para mantener la iglesia unida en
+                    medio de la crisis; desarrollamos un proyecto puntual para dar soporte ministerial, supliendo
+                    herramientas para los pastores y ministros que van a seguir difundiendo el mensaje de Dios y lo
+                    quieren hacer de forma efectiva; lo podrán hacer de forma 100% ministerial con la privacidad
+                    congregación y con la libre expresión de su credo
+                    RIDI es una red cristiana integral y una plataforma de servicios en streaming creada por expertos en
+                    TI, para la iglesia en general, emprendedores empresarialeS de gran experiencia y fuertes líderes
+                    cristianos.
+                    ¿Nuestro propósito?
+                    Reunir a la Iglesia en un solo lugar.</p>
+                <a href="#" class="btn btn-primary">Registrate aquí</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Tour por la aplicación -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active carousel-item-uno">
+            <!-- img class="d-block w-100" src="..." alt="First slide"-->
             <div class="container">
-                <br>
-                <h5 class="card-title tCardFront"><span><img class="logoCardFront" src="ridi solo-01-01.png"
-                            alt=""></span>Red Internacional De Iglesias</h5>
-            </div>
-            <p class="card-text"></p>
-            <div class="container tcen">
-                <a href="#" class="btn btnPreReg" data-toggle="modal" data-target="#modal">PRE-REGISTRO</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="container">
-        <br>
-        <div class="row">
-            <div class="col">
-                <p class="tTodos tcen">© 2020 Ridi 1. Todos los derechos reservados.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col tcen">
-                <img src="ridi-02.png" class="marcaAgua img-fluid" alt="">
-            </div>
-        </div>
-        <br>
-    </div>
-    <!-- Modal -->
-    <!-- Modal -->
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered fondoBlanco" role="document">
-            <div class="row row-cols-12 noMargin alCien">
-                <div class="col-2 gradModal">
-
-                </div>
-                <div class="col-10">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Crear cuenta</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <img src="fill-1.png" class="imgIcon">
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="nombre completo"
-                                    aria-label="Username" aria-describedby="basic-addon1">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card cardTour">
+                            <h5 class="card-header">El Problema</h5>
+                            <div class="card-body">
+                              <h5 class="card-title"></h5>
+                              <p class="card-text">
+                                La iglesia cristiana fue tomada por sorpresa mundialmente por la pandemia COVID19 dejándola incapaz de reunirse físicamente, predicar y liderar de la manera eficaz que lo venían haciendo.
+                                Nuestro propósito es ayudar a estas iglesias no solo a sobrevivir, sino a prosperar y seguir adelante.</p>
+                              <a href="#" class="btn btn-primary">Ver Más</a>
                             </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <img src="shape-copy-3.png" class="imgIcon">
-                                    </span>
-                                </div>
-                                <input type="email" class="form-control" placeholder="correo electrónico"
-                                    aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <img src="telefono.png" class="imgIcon">
-                                    </span>
-                                </div>
-                                <input type="tel" class="form-control" placeholder="teléfono" aria-label="Username"
-                                    aria-describedby="basic-addon1">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <img src="cake.png" class="imgIcon">
-                                    </span>
-                                </div>
-                                <input type="date" class="form-control" placeholder="fecha de nacimiento"
-                                    aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <img src="locked-4-copy.png" class="imgIcon">
-                                    </span>
-                                </div>
-                                <input type="password" class="form-control" placeholder="contraseña"
-                                    aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <img src="locked-4-copy.png" class="imgIcon">
-                                    </span>
-                                </div>
-                                <input type="password" class="form-control" placeholder="confirma tu contraseña"
-                                    aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <img src="fill-1-2.png" class="imgIcon">
-                                    </span>
-                                </div>
-                                <select class="custom-select" id="inputGroupSelect01">
-                                    <option selected>país</option>
-                                    <option value="Antigua y Barbuda">Antigua y Barbuda</option>
-                                    <option value="Argentina">Argentina</option>
-                                    <option value="Bahamas">Bahamas</option>
-                                    <option value="Barbados">Barbados</option>
-                                    <option value="Belice">Belice</option>
-                                    <option value="Bolivia">Bolivia</option>
-                                    <option value="Brasil">Brasil</option>
-                                    <option value="Canadá">Canadá</option>
-                                    <option value="Chile">Chile</option>
-                                    <option value="Colombia">Colombia</option>
-                                    <option value="Costa Rica">Costa Rica</option>
-                                    <option value="Cuba">Cuba</option>
-                                    <option value="Dominica">Dominica</option>
-                                    <option value="Ecuador">Ecuador</option>
-                                    <option value="El Salvador">El Salvador</option>
-                                    <option value="Estados Unidos">Estados Unidos</option>
-                                    <option value="Granada">Granada</option>
-                                    <option value="Guatemala">Guatemala</option>
-                                    <option value="Guyana">Guyana</option>
-                                    <option value="Haití">Haití</option>
-                                    <option value="Honduras">Honduras</option>
-                                    <option value="Jamaica">Jamaica</option>
-                                    <option value="México">México</option>
-                                    <option value="Nicaragua">Nicaragua</option>
-                                    <option value="Panamá">Panamá</option>
-                                    <option value="Paraguay">Paraguay</option>
-                                    <option value="Perú">Perú</option>
-                                    <option value="República Dominicana">República Dominicana</option>
-                                    <option value="San Cristóbal y Nieves">San Cristóbal y Nieves</option>
-                                    <option value="San Vicente y las Granadinas">San Vicente y las Granadinas</option>
-                                    <option value="Santa Lucía">Santa Lucía</option>
-                                    <option value="Surinam">Surinam</option>
-                                    <option value="Trinidad y Tobago">Trinidad y Tobago</option>
-                                    <option value="Uruguay">Uruguay</option>
-                                    <option value="Venezuela">Venezuela</option>
-                                </select>
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <img src="placeholder-3.png" class="imgIcon">
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="ciudad" aria-label="Username"
-                                    aria-describedby="basic-addon1">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <img src="path.png" class="imgIcon">
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="templo o iglesia"
-                                    aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <img src="usuario.png" class="imgIcon">
-                                    </span>
-                                </div>
-                                <select class="custom-select" id="inputGroupSelect01">
-                                    <option selected>cargo</option>
-                                    <option value="Pastor">Pastor</option>
-                                    <option value="Ministro">Ministro</option>
-                                    <option value="Obispo">Obispo</option>
-                                    <option value="Cantante">Cantante</option>
-                                    <option value="Misionero">Misionero</option>
-                                    <option value="Medios de comunicación">Medios de comunicación</option>
-                                    <option value="Otros">Otros</option>
-                                </select>
-                            </div>
-                        </div>
+                          </div>
                     </div>
-                    <div class="modal-footer">
-                        <a href="#" class="btn btnPreRegPost">Registrarme</a>
+                    <div class="col-6">
+                        <img src="..." class="rounded mx-auto d-block" alt="...">
                     </div>
                 </div>
             </div>
+          </div>
+          <div class="carousel-item carousel-item-dos">
+            <!--img class="d-block w-100" src="..." alt="Second slide"-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <!-- img -->
+                    </div>
+                    <div class="col-6">
+                        <div class="card cardTour">
+                            <h5 class="card-header">La Solución</h5>
+                            <div class="card-body">
+                              <h5 class="card-title"></h5>
+                              <p class="card-text">
+                                Proporcionaremos a todos los pastores, obispos y ministros una plataforma para:
+                                Predicar sus sermones semanales a su congregación estándar; y expandirse a nuevos creyentes a nivel mundial a través de STREAMING GRATUITO.
+                                Esta es la forma rápida y segura puedan hacer el recaudo de los diezmos y ofrendas.
+                                Finalmente, proporcionaremos a más de 660 millones de iglesias evangélicas servicios de valor agregado, como música, películas y educación, lo cual les permitirá tener la oportunidad de una mayor extensión y alcance.</p>
+                              <a href="#" class="btn btn-primary">Ver Más</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+          </div>
         </div>
-    </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    <!--  -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+    <script src="lib/jquery/jquery-3.5.1.slim.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Own CSS -->
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

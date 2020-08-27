@@ -1,0 +1,49 @@
+@font-face {
+    font-family: AvenirNextCondensed-Bold;
+    src: url(Mada-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: AvenirNextCondensed-Regular;
+    src: url(Mada-Regular.ttf);
+    font-weight: normal;
+}
+
+
+.bgQueSom { 
+    /* The image used */
+    background-image: url("../img/bitmap.png");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 3em;
+  }
+
+.carQueSom {
+
+    background-color: transparent !important;
+    color: white;
+}
+
+.carousel-item {
+    /*background-color: teal;*/
+}
+
+.cardTour{
+    height: 400px;
+}
+
+.carousel-item-uno{
+    background-color: teal;
+}
+
+.carousel-item-dos{
+    background-color: violet;
+}
