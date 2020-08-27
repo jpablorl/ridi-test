@@ -35,7 +35,7 @@
 .cardTour{
     height: 400px;
     background-color: transparent;
-    color: white;
+    /*color: white;*/
     border: 0;
 }
 
@@ -43,10 +43,20 @@
     border: 0;
 } 
 
-.carousel-item-uno{
-    background-color: teal;
+.carousel-item-uno .container {
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
-.carousel-item-dos{
-    background-color: violet;
+.carousel-item-dos .container {
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.carousel-indicators li {
+    background-color: rgb(223, 56, 56);
+}
+
+.carousel-indicators li .active {
+    background-color: red;
 }
