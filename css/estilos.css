@@ -60,6 +60,21 @@
     text-align: justify;
 }
 
+.cardStreaming{
+    height: 400px;
+    background-color: transparent;
+    color: black;
+    border: 0;
+}
+
+.cardStreaming .card-header,.card-body {
+    border: 0;
+} 
+
+.cardStreaming .card-text {
+    text-align: justify;
+}
+
 .carousel-item-uno .container {
     padding-left: 0%;
     padding-right: 0%;
@@ -134,6 +149,12 @@
 
 .carousel-item {
     text-align: center;
+}
+
+@media (min-width: 992px){
+    .modal-lg, .modal-xl {
+        max-width: 900px;
+    }
 }
 
 /* Footer */
