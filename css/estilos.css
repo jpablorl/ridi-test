@@ -2,15 +2,24 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @font-face {
     font-family: AvenirNextCondensed-Bold;
-    src: url(Mada-Bold.ttf);
+    src: url(../font/Mada-Bold.ttf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: AvenirNextCondensed-Regular;
-    src: url(Mada-Regular.ttf);
+    src: url(../font/Mada-Regular.ttf);
     font-weight: normal;
 }
+
+.AvenirBold {
+    font-family: AvenirNextCondensed-Bold;
+}
+
+.AvenirRegular {
+    font-family: AvenirNextCondensed-Regular;
+}
+
 /* Landing */
 .bgQueSom { 
     /* The image used */
@@ -39,6 +48,7 @@
 .cardTour{
     height: 400px;
     background-color: transparent;
+    color: white;
     border: 0;
 }
 
@@ -82,6 +92,8 @@
 
 .conAli {
     height: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .conFunc .row .col-4 {
@@ -91,6 +103,27 @@
 .conAli .row .col-2 {
     text-align: center;
 }
+
+.tituloNuestrasIglesias {
+    line-height: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-primary {
+    /*width: 193px;*/  
+    height: 48px;
+    border-radius: 24px;
+    background-color: #48958f;
+    font-family: AvenirNextCondensed-Bold;
+    color: #ffffff;
+    line-height: 35px;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
 /* Footer */
 section {
     padding: 60px 0;
@@ -160,8 +193,9 @@ section .section-title {
 
 @media (max-width:767px){
 	#footer h5 {
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
 }
