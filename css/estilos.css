@@ -56,21 +56,13 @@
     padding-right: 0%;
 }
 
-.carousel-indicators li {
-    background-color: rgb(223, 56, 56);
-}
-
-.carousel-indicators li .active {
-    background-color: red;
-}
-
 .func {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    line-height: 100px;
+    line-height: 150px;
 }
 
 .ali {
@@ -83,7 +75,9 @@
 }
 
 .conFunc {
-    height: 200px;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .conAli {
@@ -109,18 +103,18 @@ section .section-title {
     text-transform: uppercase;
 }
 #footer {
-    /*background: #007b5e !important;]*/
-    background-image: linear-gradient(to right,  #225e71, rgba(72, 149, 143, 0.45)) !important;
+    background-color: #ededed !important;
+    color: #a3a1a1;
 }
 #footer h5{
 	padding-left: 10px;
     border-left: 3px solid #eeeeee;
     padding-bottom: 6px;
     margin-bottom: 20px;
-    color:#ffffff;
+    color:#a3a1a1;
 }
 #footer a {
-    color: #ffffff;
+    color: #a3a1a1;
     text-decoration: none !important;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
@@ -141,10 +135,10 @@ section .section-title {
 }
 #footer ul.social li a,
 #footer ul.quick-links li a{
-	color:#ffffff;
+	color:#a3a1a1;
 }
 #footer ul.social li a:hover{
-	color:#eeeeee;
+	color:#a3a1a1;
 }
 #footer ul.quick-links li{
 	padding: 3px 0;
