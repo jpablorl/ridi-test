@@ -178,6 +178,12 @@
     text-align: center;
 }
 
+.separador {
+    background-color: #48958f;
+    color: white;
+    padding: 5px;
+}
+
 @media (min-width: 992px){
     .modal-lg, .modal-xl {
         max-width: 900px;
