@@ -147,7 +147,34 @@
 
 }
 
+.btn-secondary {
+    /*width: 193px;*/  
+    height: 48px;
+    border-radius: 24px;
+    background-color: #b60450;
+    font-family: AvenirNextCondensed-Bold;
+    color: #ffffff;
+    line-height: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-secondary:hover {
+    background-color: #b60450;
+    color: #000000;
+
+}
+
 .carousel-item {
+    text-align: center;
+}
+
+.accordion {
+    width: 100%;
+}
+
+.alert {
+    width: 100%;
     text-align: center;
 }
 
