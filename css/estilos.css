@@ -209,6 +209,10 @@
     color: white;
 }
 
+.alert {
+    display: none;
+}
+
 @media (min-width: 992px){
     .modal-lg, .modal-xl {
         max-width: 900px;
