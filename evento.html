@@ -14,6 +14,7 @@
 
     <!--  -->
     <title>RIDI1</title>
+
 </head>
 
 <body>
@@ -57,164 +58,105 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter6">Ofrendar</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Ingresar
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" data-toggle="modal"
-                            data-target="#exampleModalCenter5">Registrarme</a>
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModalCenter4">Iniciar
-                            sesión</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Salir</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- ¿Quienes somos? -->
-    <div class="bgQueSom">
-        <div class="card carQueSom">
-            <div class="card-body">
-                <h3 class="card-title AvenirBold">¿Quiénes somos?</h3>
-                <p class="card-text AvenirRegular" style="text-align: justify;">
-                    Somos la Red Internacional de Iglesias.
-                    Somos una multi plataforma tecnológica Live Streaming diseñada para mantener la iglesia unida en
-                    medio de la crisis; desarrollamos un proyecto puntual para dar soporte ministerial, supliendo
-                    herramientas para los pastores y ministros que van a seguir difundiendo el mensaje de Dios y lo
-                    quieren hacer de forma efectiva; lo podrán hacer de forma 100% ministerial con la privacidad
-                    congregación y con la libre expresión de su credo
-                    RIDI es una red cristiana integral y una plataforma de servicios en streaming creada por expertos en
-                    TI, para la iglesia en general, emprendedores empresarialeS de gran experiencia y fuertes líderes
-                    cristianos.
-                    ¿Nuestro propósito?
-                    Reunir a la Iglesia en un solo lugar.</p>
-                <a href="#" class="btn btn-primary" data-toggle="modal"
-                data-target="#exampleModalCenter5">Registrate aquí</a>
+    <!-- Contenido -->
+    <div>
+        <video width="100%" src="" autoplay poster="img/culto.jpg" controls>
+            Tu navegador no admite el elemento <code>video</code>.
+        </video>
+        <div class="visor">
+            <div class="container">
+                <div class="row">
+                    <h5>Mateo 3:13-17</h5>
+                </div>
+                <div class="row">
+                    <h5>Reina-Valera 1960</h5>
+                </div>
+                <div class="row">
+                    <p>13 Entonces Jesús vino de Galilea a Juan al Jordán, para ser bautizado por él.
+                        <br>
+                        14 Mas Juan se le oponía, diciendo: Yo necesito ser bautizado por ti, ¿y tú vienes a mí?
+                        <br>
+                        15 Pero Jesús le respondió: Deja ahora, porque así conviene que cumplamos toda justicia.
+                        Entonces le dejó.
+                        <br>
+                        16 Y Jesús, después que fue bautizado, subió luego del agua; y he aquí los cielos le fueron
+                        abiertos, y vio al Espíritu de Dios que descendía como paloma, y venía sobre él.
+                        <br>
+                        17 Y hubo una voz de los cielos, que decía: Este es mi Hijo amado, en quien tengo complacencia.
+                    </p>
+                </div>
             </div>
         </div>
+        <div class="container">
+            <h5>Transmisión en vivo - Servicio dominical, por: Pastor Juan Pablo Rojas <span><a href="home_mie.html">(Iglesia de los buenos hermanos)</a></span></h5><br>
+        </div>
+        <br>
+        <hr>
+        <div class="container">
+            <h1 style="width: 100%; text-align: center;">¿Deseas realizar una ofrenda? <span><button
+                        class="btn btn-secondary" data-toggle="modal"
+                        data-target="#exampleModalCenter6">Ofrendar</button></span>
+            </h1>
+        </div>
+        <hr>
     </div>
-    <!-- Funcionalidades -->
-    <div class="container conFunc">
+    <br>
+    <!-- Chat -->
+    <div class="container">
         <div class="row">
-            <div class="col-4">
-                <div class="func" data-toggle="modal" data-target="#exampleModalCenter" style="background-image: url('img/servicio.jpeg'); background-position-x: left; background-size: cover;">
-                    Streaming
+            <div class="col-8">
+                <div class="container2">
+                    <img src="img/bandmember.jpg" alt="Avatar">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span>
                 </div>
+
+                <div class="container2 darker">
+                    <img src="img/avatar_g2.jpg" alt="Avatar" class="right">
+                    <p>Hey! I'm fine. Thanks for asking!</p>
+                    <span class="time-left">11:01</span>
+                </div>
+
+                <div class="container2">
+                    <img src="img/bandmember.jpg" alt="Avatar">
+                    <p>Sweet! So, what do you wanna do today?</p>
+                    <span class="time-right">11:02</span>
+                </div>
+
+                <div class="container2 darker">
+                    <img src="img/avatar_g2.jpg" alt="Avatar" class="right">
+                    <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                    <span class="time-left">11:05</span>
+                </div>
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                        <textarea class="form-control" id="message" name="message" placeholder=" Escribe un msensaje."
+                            rows="1"></textarea>
+                        <br>
+                        <button class="btn btn-primary btn-lg">Enviar</button>
+                    </fieldset>
+                </form>
             </div>
             <div class="col-4">
-                <div class="func" data-toggle="modal" data-target="#exampleModalCenter6" style="background-image: url('img/ofrenda.jpeg'); background-position-x: center; background-size: cover;">
-                    Ofrendar
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="func" data-toggle="modal" data-target="#exampleModalCenter2" style="background-image: url('img/contacto.jpeg'); background-position-x: center; background-size: cover;">
-                    Contacto
-                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">folleto1.pdf</li>
+                    <li class="list-group-item">folleto2.pdf</li>
+                    <li class="list-group-item">folleto3.pdf</li>
+                    <li class="list-group-item">folleto4.pdf</li>
+                    <li class="list-group-item">folleto5.pdf</li>
+                </ul>
             </div>
         </div>
+
     </div>
-    <!-- Tour por la aplicación -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
-        style="background-image: linear-gradient(to right,  #225e71, #48958f)">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active carousel-item-uno">
-                <!-- img class="d-block w-100" src="..." alt="First slide"-->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="card cardTour">
-                                <div class="card-body">
-                                    <h5 class="card-title AvenirBold">El Problema</h5>
-                                    <p class="card-text AvenirRegular">
-                                        La iglesia cristiana fue tomada por sorpresa mundialmente por la pandemia
-                                        COVID19 dejándola incapaz de reunirse físicamente, predicar y liderar de la
-                                        manera eficaz que lo venían haciendo.
-                                        Nuestro propósito es ayudar a estas iglesias no solo a sobrevivir, sino a
-                                        prosperar y seguir adelante.</p>
-                                    <a href="#" class="btn btn-primary">Ver Más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <img src="img/images.jpeg" class="rounded mx-auto d-block" alt="..."
-                                style="width: 100%; padding-top:20px;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item carousel-item-dos">
-                <!--img class="d-block w-100" src="..." alt="Second slide"-->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <img src="img/images.jpeg" class="rounded mx-auto d-block" alt="..."
-                                style="width: 100%; padding-top:20px;">
-                        </div>
-                        <div class="col-6">
-                            <div class="card cardTour">
-                                <div class="card-body">
-                                    <h5 class="card-title AvenirBold">La Solución</h5>
-                                    <p class="card-text AvenirRegular">
-                                        Proporcionaremos a todos los pastores, obispos y ministros una plataforma para:
-                                        Predicar sus sermones semanales a su congregación estándar; y expandirse a
-                                        nuevos creyentes a nivel mundial a través de STREAMING GRATUITO.
-                                        Esta es la forma rápida y segura puedan hacer el recaudo de los diezmos y
-                                        ofrendas.
-                                        Finalmente, proporcionaremos a más de 660 millones de iglesias evangélicas
-                                        servicios de valor agregado, como música, películas y educación, lo cual les
-                                        permitirá tener la oportunidad de una mayor extensión y alcance.</p>
-                                    <a href="#" class="btn btn-primary">Ver Más</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Nuestros aliados -->
-    <div class="container conAli">
-        <div class="row">
-            <h5 class="tituloNuestrasIglesias AvenirBold">Nuestras Iglesias</h5>
-        </div>
-        <div class="row">
-            <div class="col-2">
-                <div class="ali">
-                    Iglesia 1
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="ali">
-                    Iglesia 2
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="ali">
-                    Iglesia 3
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="ali">
-                    Iglesia 4
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="ali">
-                    Iglesia 5
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="ali">
-                    Iglesia 6
-                </div>
-            </div>
-        </div>
-    </div>
+    <hr>
+    <br>
     <!-- Publicidad -->
     <div id="demo" class="carousel slide" data-ride="carousel">
         <!-- The slideshow -->
@@ -335,7 +277,8 @@
 
                                                         <div class="form-group">
                                                             <div class="col-md-12">
-                                                                <label for="validationDefault01">Correo electrónico</label>
+                                                                <label for="validationDefault01">Correo
+                                                                    electrónico</label>
                                                                 <input id="email" name="email" type="text"
                                                                     placeholder="mail@mail.com" class="form-control">
                                                             </div>
@@ -345,7 +288,8 @@
                                                             <div class="col-md-12">
                                                                 <label for="validationDefault01">Teléfono</label>
                                                                 <input id="phone" name="phone" type="text"
-                                                                    placeholder="(+52) 55 5555 5555" class="form-control">
+                                                                    placeholder="(+52) 55 5555 5555"
+                                                                    class="form-control">
                                                             </div>
                                                         </div>
 
@@ -353,8 +297,7 @@
                                                             <div class="col-md-12">
                                                                 <label for="validationDefault01">Mensaje</label>
                                                                 <textarea class="form-control" id="message"
-                                                                    name="message"
-                                                                    placeholder="Mensaje."
+                                                                    name="message" placeholder="Mensaje."
                                                                     rows="7"></textarea>
                                                             </div>
                                                         </div>
@@ -377,18 +320,23 @@
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7528.213646855604!2d-98.9879213778917!3d19.364526719607035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1598648378971!5m2!1ses!2smx"
                                     width="100%" height="50%" frameborder="0" style="border:0;" allowfullscreen=""
                                     aria-hidden="false" tabindex="0"></iframe>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                                            <ul class="list-unstyled list-inline social text-center">
-                                                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                                <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                                <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                                        <ul class="list-unstyled list-inline social text-center">
+                                            <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a>
+                                            </li>
+                                            <li class="list-inline-item"><a href="#"><i
+                                                        class="fa fa-google-plus"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" target="_blank"><i
+                                                        class="fa fa-envelope"></i></a></li>
+                                        </ul>
                                     </div>
+                                    <hr>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -601,17 +549,20 @@
                     <div class="container conFunc">
                         <div class="row">
                             <div class="col-4">
-                                <button class="func" id="btnRegInst" style="background-image: url('img/pulpito.jpeg'); background-position-x: center;">
+                                <button class="func" id="btnRegInst"
+                                    style="background-image: url('img/pulpito.jpeg'); background-position-x: center;">
                                     Institución
                                 </button>
                             </div>
                             <div class="col-4">
-                                <button class="func" id="btnRegAgr" style="background-image: url('img/oratoria.jpeg'); background-position-x: center;">
+                                <button class="func" id="btnRegAgr"
+                                    style="background-image: url('img/oratoria.jpeg'); background-position-x: center;">
                                     Pastor
                                 </button>
                             </div>
                             <div class="col-4">
-                                <button class="func" style="background-image: url('img/miembros.jpeg'); background-position-x: center;">
+                                <button class="func"
+                                    style="background-image: url('img/miembros.jpeg'); background-position-x: center;">
                                     Miembro
                                 </button>
                             </div>
@@ -709,9 +660,70 @@
             </div>
         </div>
     </div>
+    <!-- Modal for Contact to Pastor -->
+    <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Contacto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="well well-sm">
+                                                <form class="form-horizontal" method="post">
+                                                    <fieldset>
+                                                        <legend>Mensaje para: Pastor Juan Pablo Rojas</legend>
+                                                        <div class="form-group">
+                                                            <div class="col-md-12">
+                                                                <label for="validationDefault01">Asunto</label>
+                                                                <input id="lname" name="name" type="text"
+                                                                    placeholder="Asunto" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-md-12">
+                                                                <label for="validationDefault01">Mensaje</label>
+                                                                <textarea class="form-control" id="message"
+                                                                    name="message" placeholder="Mensaje."
+                                                                    rows="7"></textarea>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <div class="col-md-12 text-center">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary btn-lg">Enviar</button>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary">Save changes</button>
+             </div-->
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="lib/jquery/jquery-3.5.1.slim.min.js"></script>
+    <script src="lib/jquery/jquery-3.5.1.min.js"></script>
     <script src="lib/popper/popper.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 

@@ -7,3 +7,13 @@ const btnRegAgr = document.querySelector('#btnRegAgr');
 btnRegAgr.addEventListener('click',function(){
     $('.alert').show();
 });
+$(".evento-item").click(function(event) {
+    window.location.assign('evento.html');
+});
+//Jquery
+$("video").click(function(event) {
+    $(".visor").fadeIn(400);
+});
+$(".visor").click(function(event) {
+    $(".visor").fadeOut(400);
+});

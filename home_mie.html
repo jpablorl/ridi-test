@@ -147,7 +147,7 @@
                 <div class="row">
                     <h5>Últimos eventos</h5>
                     <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                        <a href="#" class="evento-item list-group-item list-group-item-action flex-column align-items-start active">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-1">List group item heading</h5>
                                 <small>3 days ago</small>
@@ -223,7 +223,7 @@
                                     <h5 class="card-title AvenirBold">Pastor Juan Pablo Rojas</h5>
                                     <p class="card-text AvenirRegular">
                                         Semblanza del pastor.</p>
-                                    <!--a href="#" class="btn btn-primary">Ver Más</a-->
+                                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter7">Contactar</a>
                                 </div>
                             </div>
                         </div>
@@ -738,7 +738,7 @@
                                     <select class="custom-select" id="cargo">
                                         <option selected>Tipo</option>
                                         <option>Ofrenda</option>
-                                        <option>Diezmo Card</option>
+                                        <option>Diezmo</option>
                                     </select>
                                 </div>
                             </div>
@@ -752,6 +752,67 @@
             </div>
         </div>
     </div>
+     <!-- Modal for Contact to Pastor -->
+     <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLongTitle">Contacto</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <div class="modal-body">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-12">
+                             <div class="container">
+                                 <div class="row">
+                                     <div class="col-md-12">
+                                         <div class="well well-sm">
+                                             <form class="form-horizontal" method="post">
+                                                 <fieldset>
+                                                     <legend>Mensaje para: Pastor Juan Pablo Rojas</legend>
+                                                     <div class="form-group">
+                                                         <div class="col-md-12">
+                                                             <label for="validationDefault01">Asunto</label>
+                                                             <input id="lname" name="name" type="text"
+                                                                 placeholder="Asunto" class="form-control">
+                                                         </div>
+                                                     </div>
+                                                     <div class="form-group">
+                                                         <div class="col-md-12">
+                                                             <label for="validationDefault01">Mensaje</label>
+                                                             <textarea class="form-control" id="message"
+                                                                 name="message" placeholder="Mensaje."
+                                                                 rows="7"></textarea>
+                                                         </div>
+                                                     </div>
+
+                                                     <div class="form-group">
+                                                         <div class="col-md-12 text-center">
+                                                             <button type="submit"
+                                                                 class="btn btn-primary btn-lg">Enviar</button>
+                                                         </div>
+                                                     </div>
+                                                 </fieldset>
+                                             </form>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!--div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary">Save changes</button>
+             </div-->
+         </div>
+     </div>
+ </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="lib/jquery/jquery-3.5.1.slim.min.js"></script>
