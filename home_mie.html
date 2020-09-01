@@ -100,6 +100,9 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto p-2">
+                <li class="nav-item">
+                    <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#exampleModalCenter6">Ofrendar</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -109,9 +112,6 @@
                         <a class="dropdown-item" href="#">Español</a>
                         <a class="dropdown-item" href="#">Inglés</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter6">Ofrendar</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Salir</a>
@@ -576,11 +576,24 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Chat -->
+                        <div class="chat-popup" id="myForm" style="display: none;">
+                            <form action="" class="form-container">
+                              <h1>Chat</h1>
+                          
+                              <label for="msg"><b>¿Cuál es tu duda?</b></label>
+                              <textarea placeholder="Escribe una pregunta.." name="msg" required></textarea>
+                          
+                              <button  class="btn btn-primary">Enviar</button>
+                              <button  class="btn btn-secondary" onclick="closeForm()">Cerrar</button>
+                            </form>
+                          </div>
+                        <!-- Chat -->
                     </div>
-                    <!--div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div-->
+                    <div class="modal-footer">
+                    <!--button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button-->
+                    <button type="button" class="btn btn-primary" onclick="openForm()">No encontré lo que buscaba</button>
+                </div>
                 </div>
             </div>
         </div>

@@ -18,7 +18,11 @@ $("video").click(function(event) {
 $(".visor").click(function(event) {
     $(".visor").fadeOut(400);
 });
-
+const btnLogin = document.querySelector('#btnLogin');
+btnLogin.addEventListener('click',function(){
+    $('#exampleModalCenter5').modal('hide');
+    $('#exampleModalCenter4').modal('show');
+});
 const btnBuscarCita = document.querySelector('#btnBuscarCita');
 btnBuscarCita.addEventListener('click',function(){
     $('.alert').removeClass('alert-success');
@@ -34,3 +38,11 @@ const btnOcultarCita = document.querySelector('#btnOcultarCita');
 btnOcultarCita.addEventListener('click',function(){
     $('.alert').hide();
 });
+//chat
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
