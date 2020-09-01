@@ -87,11 +87,11 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#mensajes" role="tab"
-                        aria-controls="contact" aria-selected="false">Mensajes</a>
+                        aria-controls="mensajes" aria-selected="false">Mensajes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#mensajes" role="tab"
-                        aria-controls="contact" aria-selected="false">Perfil</a>
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#perfil" role="tab"
+                        aria-controls="perfil" aria-selected="false">Perfil</a>
                 </li>
             </ul>
             <br>
@@ -180,40 +180,258 @@
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     <br>
-                    <button id="btnInvitar" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter7">Enviar invitación</button>
+                    <button id="btnInvitar" class="btn btn-secondary" data-toggle="modal"
+                        data-target="#exampleModalCenter7">Enviar invitación</button>
                     <br><br>
                     <h4>Lista de miembros de la congregación</h4>
                     <table class="table table-hover">
                         <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
                         </tbody>
-                      </table>
+                    </table>
                 </div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="row">
+                                <h5>Agosto</h5><br>
+                            </div>
+                            <div class="row">
+                                <h5>Eventos</h5>
+                                <div class="list-group">
+                                    <a href="#"
+                                        class="evento-item list-group-item list-group-item-action flex-column align-items-start active">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">List group item heading</h5>
+                                            <small>3 days ago</small>
+                                        </div>
+                                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                                            diam eget
+                                            risus varius blandit.</p>
+                                        <small>Donec id elit non mi porta.</small>
+                                    </a>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action flex-column align-items-start">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">List group item heading</h5>
+                                            <small class="text-muted">3 days ago</small>
+                                        </div>
+                                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                                            diam eget
+                                            risus varius blandit.</p>
+                                        <small class="text-muted">Donec id elit non mi porta.</small>
+                                    </a>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action flex-column align-items-start">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">List group item heading</h5>
+                                            <small class="text-muted">3 days ago</small>
+                                        </div>
+                                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                                            diam eget
+                                            risus varius blandit.</p>
+                                        <small class="text-muted">Donec id elit non mi porta.</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <form class="form-horizontal" method="post">
+                                <fieldset>
+                                    <legend>Agregar Evento</legend>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label for="validationDefault01">Tipo de evento</label>
+                                            <select class="custom-select" id="area">
+                                                <option selected>Tipo</option>
+                                                <option>Servicio</option>
+                                                <option>Culto</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label for="validationDefault01">Nombre</label>
+                                            <input id="lname" name="name" type="text" placeholder=" nombre"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label for="validationDefault01">Fecha
+                                            </label>
+                                            <input id="email" name="email" type="date" placeholder=""
+                                                class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label for="validationDefault01">Hora</label>
+                                            <input id="phone" name="phone" type="time" placeholder=""
+                                                class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label for="validationDefault01">Descripción</label>
+                                            <textarea class="form-control" id="message" name="message"
+                                                placeholder="Mensaje." rows="7"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="mensajes" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="container2 btnMensaje">
+                                    <img src="img/bandmember.jpg" alt="Avatar">
+                                    <p>Hello. How are you today?</p>
+                                    <span class="time-right">11:00</span>
+                                </div>
+                             <div class="container2 btnMensaje">
+                                    <img src="img/avatar_g2.jpg" alt="Avatar">
+                                    <p>Sweet! So, what do you wanna do today?</p>
+                                    <span class="time-right">11:02</span>
+                                </div>
+                                <div class="container2 btnMensaje">
+                                    <img src="img/avatar_g2.jpg" alt="Avatar" >
+                                    <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                                    <span class="time-right">11:05</span>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="perfil" role="tabpanel" aria-labelledby="contact-tab">
+                    <!-- Información de la iglesia -->
+                    <div class="row">
+                        <div class="col-4">
+                            <form class="form-horizontal" method="post">
+                                <fieldset>
+                                    <legend>Agregar sección</legend>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label for="validationDefault01">Titulo</label>
+                                            <input id="lname" name="name" type="text" placeholder=" nombre"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label for="validationDefault01">Contenido</label>
+                                            <textarea class="form-control" id="message" name="message"
+                                                placeholder="Mensaje." rows="7"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlFile1">Imágen</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="col-8">
+                            <h4>Vista previa</h4>
+
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+                                style="background-image: linear-gradient(to right,  #225e71, #48958f)">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active carousel-item-uno">
+                                        <!-- img class="d-block w-100" src="..." alt="First slide"-->
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="card cardTour">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title AvenirBold">Nuestra congregación</h5>
+                                                            <p class="card-text AvenirRegular">
+                                                                Semblanza de la iglesia.</p>
+                                                            <!--a href="#" class="btn btn-primary">Ver Más</a-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="img/images.jpeg" class="rounded mx-auto d-block" alt="..."
+                                                        style="width: 100%; padding-top:20px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item-dos">
+                                        <!--img class="d-block w-100" src="..." alt="Second slide"-->
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="img/images.jpeg" class="rounded mx-auto d-block" alt="..."
+                                                        style="width: 100%; padding-top:20px;">
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card cardTour">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title AvenirBold">Pastor Juan Pablo Rojas
+                                                            </h5>
+                                                            <p class="card-text AvenirRegular">
+                                                                Semblanza del pastor.</p>
+                                                            <a href="#" class="btn btn-primary" data-toggle="modal"
+                                                                data-target="#exampleModalCenter7">Contactar</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
@@ -760,7 +978,8 @@
                                             aria-describedby="emailHelp" placeholder="mail@mail.com">
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                            required>
                                         <label class="form-check-label" for="invalidCheck2">
                                             Es ministro de la iglesia
                                         </label>
@@ -773,8 +992,63 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button-->
-                    <button type="button" class="btn btn-primary">Enviar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Contact -->
+    <div class="modal fade" id="exampleModalCenter8" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Responder mensaje</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="well well-sm">
+                                                <form class="form-horizontal" method="post">
+                                                    <fieldset>
+                                                        
+
+                                                        <div class="form-group">
+                                                            <div class="col-md-12">
+                                                                <label for="validationDefault01">Mensaje</label>
+                                                                <textarea class="form-control" id="message"
+                                                                    name="message" placeholder="Mensaje."
+                                                                    rows="7"></textarea>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <div class="col-md-12 text-center">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary btn-lg">Enviar</button>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div-->
             </div>
         </div>
     </div>
@@ -790,6 +1064,13 @@
     <script src="js/script.js"></script>
     <!-- Web RTC-->
     <script src="js/main.js"></script>
+
+    <script>
+        const btnMensaje= document.querySelector('.btnMensaje');
+        btnMensaje.addEventListener('click',function(){
+            $('#exampleModalCenter8').modal('show');
+});
+    </script>
 </body>
 
 </html>
